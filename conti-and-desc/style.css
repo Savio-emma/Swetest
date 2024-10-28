@@ -54,6 +54,7 @@ header{
     background: rgb(126,82,24);
     background: linear-gradient(38deg, rgba(126,82,24,1) 0%, rgba(0,0,0,0.829656862745098) 69%);
     transition: .3;
+    overflow: hidden;
 }
 
 .main.active{
@@ -65,6 +66,7 @@ header{
     display: flex;
     height: 100vh;
     width: 200%;
+
 }
 
 .home{
@@ -97,13 +99,7 @@ header{
     font-size: 16px;
 }
 
-.start-or-back{
-    display: flex;
-    align-items: center;
-    column-gap: 20px;
-}
-
-.home-content .start-btn, .home-content .go-back{
+.home-content .start-btn{
     width: 50%;
     height: 55px;
     margin-top: 20px;
@@ -118,15 +114,29 @@ header{
     transition: .3s;
 }
 
-.start-or-back a{
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+.home-content .start-btn:hover{
+    background: black;
 }
 
-.home-content .start-btn:hover, .home-content .go-back:hover{
-    background: black;
+.home-content i {
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+    margin-top: 30px;
+    animation: breath 3s infinite;
+}
+
+@keyframes breath {
+    0%{
+        scale: 1;
+    }
+    50%{
+        scale: .9;
+    }
+    100%{
+        scale: 1;
+    }
 }
 
 .popup-info{
@@ -206,7 +216,7 @@ header{
 
 .quiz-section{
     position: relative;
-    left: -50%;
+    left: -80%;
     /* left: 0; */
     width: 100%;
     background: rgb(35, 1, 1);
@@ -412,9 +422,14 @@ header{
     background: brown;
 }
 
-@media (max-width: 420px) {
+
+@media (max-width: 500px) {
     .quiz-section .quiz-box{
         scale: .8;
         width: 100%;
     }
+
+    /* .container{
+        width: 100%;
+    } */
 }
