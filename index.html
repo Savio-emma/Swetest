@@ -5,47 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1d52d29f15.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-    <main class="main">
-        <header class="header">
-            <a href="#" class="logo">Swetest</a>
+    <div class="before-main">
+        <main class="main">
+            <header class="header">
+                <a href="#" class="logo">Swetest</a>
+        
+        
+                <nav class="navbar">
+                    <a href="#" class="active">Quiz website</a>
+                    <!-- <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Contact</a> -->
+                </nav>    
+            </header>
     
     
-            <nav class="navbar">
-                <a href="#" class="active">Quiz website</a>
-                <!-- <a href="#">About</a>
-                <a href="#">Services</a>
-                <a href="#">Contact</a> -->
-            </nav>    
-        </header>
-
-
-
-        <section class="home">
-        <div class="home-content">
-            <h1>Quiz Website</h1>
-            <p>
-                Welcome to Swetest CBT platform, where brillance collides with knowledge.
-                Test your memory, answer questions, engage yourself intellectually
-            </p>
-            <p>
-                Choose one of the test below to start
-            </p>
-            
-            <div class="quiz-option">
-                <a href="Bacon/index.html">Francis Bacon</a>
-                <a href="conti-and-desc/index.html">Descartes & co</a>
-                <a href="Spinoza/index.html">Spinoza</a>
-                <a href="Leibniz/index.html">Leibniz</a>
+    
+            <section class="home">
+            <div class="home-content">
+                <h1>Quiz Website</h1>
+                <p>
+                    Welcome to Swetest CBT platform, where brillance collides with knowledge.
+                    Study and Test your memory, answer questions, engage yourself intellectually
+                </p>
+                <p>
+                   After studying, Choose one of the test below to start
+                </p>
             </div>
-        </div>
-    </section>
     
-    </main>
+        </section>
+    
+        <ul class="accordion">
+    
+            <div class="profile-observer">
+                <li>
+                    <input type="radio" name="accordion" id="first" class="radio-buttons">
+                    <label for="first" class="label-style">Study Mode</label>
+                    <div class="content">
+                        <p>
+                                <div class="quiz-option">
+                                <a href="https://eu.docworkspace.com/d/sIOT6ivnRAaiojbkG">Western Phil</a>
+                        </p>
+                    </div>
+                </li>
+            </div>
+    
+            <div class="profile-observer">
+                <li>
+                    <input type="radio" name="accordion" id="fifth" class="radio-buttons">
+                    <label for="fifth" class="label-style">CBT mode</label>
+                    <div class="content">
+                        <p>
+                                <div class="quiz-option">
+                                <a href="Bacon/index.html">Francis Bacon</a>
+                                <a href="conti-and-desc/index.html">Descartes & co</a>
+                                <a href="Spinoza/index.html">Spinoza</a>
+                                <a href="Leibniz/index.html">Leibniz</a>
+                        </p>
+                    </div>
+                </li>
+                
+            </div>
+            
+        </ul>
+        </main>
+    </div>
 
 
-    
+    <script src="app.js"></script>
 </body>
 </html>
