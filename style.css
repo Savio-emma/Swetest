@@ -52,6 +52,8 @@ header{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-content: center;
     background: rgb(126,82,24);
     background: linear-gradient(38deg, rgba(126,82,24,1) 0%, rgba(0,0,0,0.829656862745098) 69%);
 }
@@ -125,9 +127,15 @@ header{
     }
 }
 
+.accordion-cover{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .accordion{
-    margin: auto;
-    width: 600px;
+    /* margin: auto; */
+    width: 80%;
     margin-top: 150px;
 }
 
