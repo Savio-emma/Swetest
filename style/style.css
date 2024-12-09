@@ -404,7 +404,7 @@ hr{
 }
 
 .unavailable-div{
-    width: 180px;
+    width: 200px;
     height: 50px;
     background-color: #09001d;
     text-align: center;
@@ -413,10 +413,10 @@ hr{
     border-radius: 5px;
     border: 0.5px solid white;
     display: none;
-    animation: pop 3s ease-in;
+    animation: pop-in 3s ease-in;
 }
 
-@keyframes pop {
+@keyframes pop-in {
     0%{
         display: none;
         opacity: 0;
