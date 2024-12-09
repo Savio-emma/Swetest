@@ -37,3 +37,24 @@ retry.onclick = () => {
   unSuccessful.style.display = 'none';
   formArea.style.display = 'flex'
 }
+
+const unavailale = document.querySelector(".unavailable");
+const unavailaleDiv = document.querySelector(".unavailable-div");
+
+// unavailale.onclick = () => {
+//   unavailaleDiv.style.display = 'flex';
+//   unavailaleDiv.style.opacity = 1;
+//   unavailaleDiv.style.scale = 1;
+// }
+
+
+// Add an event listener to the click-me div
+unavailale.addEventListener('click', () => {
+  // Show the pop-up div
+  unavailaleDiv.style.display = 'flex';
+
+  // Hide the pop-up div after 2 seconds
+  setTimeout(() => {
+    unavailaleDiv.style.display = 'none';
+  }, 2000);
+});
