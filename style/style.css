@@ -113,7 +113,22 @@ header{
     font-size: 20px;
 }
 
-.quiz-option a:hover{
+.quiz-option .unavailable{
+    text-decoration: none;
+    color: whitesmoke;
+    background-color: transparent;
+    border: 2px solid white;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    padding: 30px ;
+    font-size: 20px;
+}
+
+.quiz-option a:hover, .quiz-option .unavailable:hover{
     background-color: rgb(120, 27, 27);
 }
 
