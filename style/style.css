@@ -52,15 +52,14 @@ marquee{
     background: rgb(153,35,26);
     background: linear-gradient(38deg, rgba(153,35,26,1) 0%, rgba(0,0,0,0.829656862745098) 54%);
     color: rgb(205, 205, 205);
-    margin-top: 50px;
+    margin-top: 70px;
     padding: 5px 0;
     border-bottom: 1px solid rgb(220, 219, 219);
+    position: fixed;
 }
 
-@media (max-width: 500px) {
-    marquee{
-        margin-top: 100px;
-    }
+h3{
+    margin-top: 30px;
 }
 
 .before-main{
