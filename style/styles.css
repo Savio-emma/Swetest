@@ -49,6 +49,21 @@ header{
  color: rgba(225, 225, 0);
 }
 
+marquee{
+    background: rgb(153,35,26);
+    background: linear-gradient(38deg, rgba(153,35,26,1) 0%, rgba(0,0,0,0.829656862745098) 54%);
+    color: rgb(205, 205, 205);
+    margin-top: 50px;
+    padding: 5px 0;
+    border-bottom: 1px solid rgb(220, 219, 219);
+}
+
+@media (max-width: 500px) {
+    marquee{
+        margin-top: 100px;
+    }
+}
+
 .main{
     min-height: 100vh;
     background: rgb(126,82,24);
