@@ -58,3 +58,12 @@ unavailale.addEventListener('click', () => {
     unavailaleDiv.style.display = 'none';
   }, 2000);
 });
+
+
+
+//to show an alert when the download button is clicked
+const download = document.querySelector(".download");
+
+download.onclick = () => {
+  alert("If you have data, your file will start downloading...")
+}

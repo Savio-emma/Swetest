@@ -126,5 +126,15 @@
 
             <a class="go-back" href="index.html"><i class="fa-solid fa-left-long"></i></a>
         </section>
+
+        <script>
+            const download = document.querySelectorAll(".download");
+            
+            download.forEach(file => {
+                file.onclick = () =>{
+                    alert("If you have data, your file will start downloading...")
+                }
+            });
+        </script>
     </body>
 </html>
