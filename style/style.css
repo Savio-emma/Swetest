@@ -52,10 +52,11 @@ marquee{
     background: rgb(153,35,26);
     background: linear-gradient(38deg, rgba(153,35,26,1) 0%, rgba(0,0,0,0.829656862745098) 54%);
     color: rgb(205, 205, 205);
-    margin-top: 70px;
+    margin-top: 65px;
     padding: 5px 0;
     border-bottom: 1px solid rgb(220, 219, 219);
     position: fixed;
+    z-index: 2;
 }
 
 h3{
@@ -92,6 +93,7 @@ h3{
     text-align: center;
     flex-direction: column;
     row-gap: 20px;
+    margin-top: 40px;
 }
 
 .home-content h1{
@@ -415,6 +417,7 @@ hr{
     width: 60%;
     margin: auto;
     margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 .unavailable-div{
@@ -447,4 +450,47 @@ hr{
         opacity: 0;
         scale: 0;
     }
+}
+
+.download{
+    background: black;
+    width: 50px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.download:hover{
+    background: rgb(34, 34, 34);
+}
+
+.download i{
+    font-size: small;
+}
+
+.past-question3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+    text-align: center;
+    border: 1px solid white;
+    width: 70%;
+    margin: auto;
+    padding: 10px 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.past-question3 h3{
+    color: rgba(225, 225, 0);
+}
+
+.past-question3 i {
+    text-decoration: none;
+    color: white;
 }
