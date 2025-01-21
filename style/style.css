@@ -59,6 +59,13 @@ marquee{
     z-index: 2;
 }
 
+.comment{
+    margin: 30px 50px;
+    font-size: small;
+    font-weight: bolder;
+    color: gold;
+}
+
 h3{
     margin-top: 30px;
 }
