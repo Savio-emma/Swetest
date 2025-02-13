@@ -1,0 +1,117 @@
+.study-container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 120px;
+    margin-bottom: 70px;
+    width: 80%;
+}
+
+.note {
+    background-color: var(--accent-color);
+    border-left: 4px solid var(--secondary-color);
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
+
+.subject-container {
+    margin: auto;
+    margin-bottom: 80px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+details {
+    background: var(--bg-color);
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px var(--text-color);
+    transition: all 0.3s ease;
+    width: 80%;
+}
+
+details:hover {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+summary {
+    padding: 15px 20px;
+    /* background-color: var(--accent-color); */
+    /* color: var(--text-color); */
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    list-style: none;
+    transition: background-color 0.2s ease;
+    display: flex;
+    justify-content: space-between;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary:after {
+    content: '+';
+    float: right;
+    font-size: 1.2em;
+    transition: transform 0.3s ease;
+}
+
+details[open] summary {
+    border-radius: 8px 8px 0 0;
+}
+
+details[open] summary:after {
+    content: '-';
+    transform: rotate(180deg);
+}
+
+.download-links {
+    padding: 15px 20px;
+}
+
+.download-link {
+    display: block;
+    padding: 10px;
+    margin: 8px 0;
+    text-decoration: none;
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+    border-radius: 5px;
+    transition: all 0.2s ease;
+}
+
+.download-link:hover {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    transform: translateX(5px);
+}
+
+.study-container i{
+    border: 1px solid var(--text-color);
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    margin: 30px auto;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    summary {
+        padding: 12px 15px;
+        font-size: 0.9em;
+    }
+
+    .download-link {
+        padding: 8px 10px;
+        font-size: 0.9em;
+    }
+}

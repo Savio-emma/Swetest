@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sweetest</title>
-  <link rel="stylesheet" href="css/home.css">
   <link rel="stylesheet" href="css/mainstyle.css">
+  <link rel="stylesheet" href="css/about.css">
 
   
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
@@ -43,58 +43,29 @@
     Don't watch the clock; do what it does. Keep going.
   </marquee>
 
-  <!-- Greeting message (will be set by JavaScript) -->
-  <div id="greeting"></div>
-
-  <!-- Main grid container with 16 links (4 rows x 4 columns) -->
-   <div class="before-grid">
-    <h3 class="quick-options">quick options</h3>
-    <p id="dateTime"></p>
-   </div>
-  <main>
-    <div class="grid-container">
-      <a href="first-sem-study.html">
-        <i class="fa-solid fa-landmark"></i>
-        <div>Study <br> 1st sem</div>
-      </a>
-      <a href="first-sem-exam.html">
-        <i class="fa-solid fa-pen-nib"></i>
-        <div>Exam <br> 1st sem</div>
-      </a>
-      <a href="hidden.html">
-        <i class="fa-solid fa-code"></i>
-        <div>Developer</div>
-      </a>
-      <a href="second-sem-study.html">
-        <i class="fa-solid fa-graduation-cap"></i>
-        <div>Study <br> 2nd sem</div>
-      </a>
-      <a href="second-sem-exam.html">
-        <i class="fas fa-pencil-alt"></i>
-        <div>Exam <br> 2nd sem</div>
-      </a>
-      <a href="menu.html">
-        <i class="fa-solid fa-bars"></i>
-        <div>Menu</div>
-      </a>
-      <a href="https://wa.me/09044321998">
-        <i class="fa-brands fa-whatsapp"></i>
-        <div>whatsapp</div>
-      </a>
-      <a href="about.html">
-        <i class="fas fa-info-circle"></i>
-        <div>About</div>
-      </a>
-      <a href="settings.html">
-        <i class="fa-solid fa-gears"></i>
-        <div>Settings</div>
-      </a>
+</head>
+<body>
+    <div class="about-container">
+        <h1>About Sweetest</h1>
+        <p>Welcome to <strong>Sweetest</strong>, the best place to make studying easy and fun! We believe that learning should be simple, exciting, and rewarding. Whether you're preparing for a test, improving your skills, or just exploring new topics, our quizzes and study tools are here to help.</p>
+        <p>At <strong>Sweetest</strong>, we offer a variety of quizzes, flashcards, and study materials to help you learn in the best way for you. Our platform is designed to be user-friendly, so you can focus on what really matters—gaining knowledge and having fun while doing it!</p>
+        <p>Join us today and make studying sweeter than ever!</p>
+        <a href="index.html" class="cta-button">Join Now</a>
+        <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=100071174964717&mibextid=ZbWKwL"><i class="fab fa-facebook"></i></a>
+            <a href="https://x.com/ifech19"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://t.me/Saviox33" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+            <a href="https://wa.me/09044321998" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
     </div>
-  </main>
+</body>
+</html>
+
+  
 
   <!-- Bottom Navbar with 4 links -->
   <nav>
-    <a href="index.html"  style="color: var(--primary-color);">
+    <a href="index.html">
       <i class="fas fa-home"></i>
       <span>Home</span>
     </a>
@@ -109,7 +80,7 @@
       <span>menu</span>
     </a>
 
-    <a href="about.html">
+    <a href="about.html"  style="color: var(--primary-color);">
         <i class="fas fa-info-circle"></i>
         <span>About</span>
       </a>
@@ -119,18 +90,6 @@
       <span>Settings</span>
     </a>
   </nav>
-  <!-- Popup Modal -->
-  <div id="popup" class="modal">
-    <div class="modal-content">
-      <h2>Quiz Website</h2>
-      <p>
-        Welcome to the sweetest platform, where brilliance collides with knowledge.
-        Study and test your memory, answer questions, and engage yourself intellectually.
-      </p>
-      <p>After studying, choose one of the tests below to start.</p>
-      <button id="proceedBtn">Proceed</button>
-    </div>
-  </div>
 
   <div id="loader-overlay" class="loader-overlay">
     <div class="bouncing-dots">

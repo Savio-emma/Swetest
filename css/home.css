@@ -1,0 +1,115 @@
+/* Greeting message */
+#greeting {
+    text-align: center;
+    padding: 10px;
+    font-size: 1.2em;
+    margin-top: 90px;
+  }
+
+  #dateTime {
+    font-size: 16px;
+  }
+
+  .quick-options{
+      
+      margin-left: 5px;
+  }
+
+  .before-grid{
+      margin-top: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 100%;
+  }
+
+  /* Main grid container */
+  .grid-container {
+    max-width: 500px;
+    margin:auto; /* centers the grid container horizontally */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 20px;
+  }
+  .grid-container a {
+    background: var(--div-color);
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--div-font);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1 / 1;
+  }
+  .grid-container a:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  .grid-container a i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+  }
+
+  /* Popup Modal */
+  .modal {
+    display: block; /* Show modal on page load */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: var(--bg-color);
+  }
+  .modal-content {
+    background-color: var(--accent-color);
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    position: relative;
+    top: 20%;
+  }
+  .modal-content h2 {
+    margin-top: 0;
+  }
+  .modal-content p {
+    margin: 15px 0;
+    line-height: 1.5;
+  }
+ 
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .grid-container {
+      gap: 5px;
+      padding: 20px;
+      padding-top: 0;
+      scale: .85;
+    }
+    .grid-container a i {
+      font-size: 1.5em;
+      margin-bottom: 5px;
+    }
+    .grid-container a div {
+      font-size: 0.9em;
+    }
+  }
+  @media (max-width: 480px) {
+    /* header, marquee, #greeting {
+      padding: 10px;
+    } */
+    nav a {
+      font-size: 0.8em;
+    }
+  }
+ 

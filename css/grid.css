@@ -1,0 +1,142 @@
+
+
+body{
+    color: var(--text-color);
+    background: var(--bg-color);
+}
+
+#content{
+    position: relative;  
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.go-back{
+    text-decoration: none;
+    color: var(--text-color);
+    margin-top: 20px;
+    height: 50px;
+    width: 90px;
+    background-color: var(--bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.comment{
+    margin-top: 110px;
+}
+
+
+/* hidden */
+
+.past-questions, .past-first{
+    width: 100%;
+    text-align: center;
+}
+
+.past-first h3{
+    margin-top: 20px;
+}
+
+.past-first .grid-container-grid p{
+    color: var(--primary-color);
+}
+
+.grid-container-grid{
+    width: 100%;
+    /* background-color: white; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 150px);
+    justify-content: center;
+    grid-gap: 20px;
+    margin-top: 20px;
+}
+
+.grid-container-grid .grid{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 20px;
+    color: var(--accent-color);
+}
+
+.grid-container-grid .grid i {
+    font-size: 100px;
+    color: var(--text-color);
+}
+
+hr{
+    width: 60%;
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.download{
+    background: var(--bg-color);
+    width: 50px;
+    height: 30px;
+    border: 1px solid var(--text-color);
+    border-radius: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-container-grid .grid .download i{
+    font-size: 16px;
+}
+
+.past-question3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+    text-align: center;
+    border: 1px solid white;
+    width: 70%;
+    margin: auto;
+    padding: 10px 30px;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
+.past-question3 h3{
+    color: var(--text-color);
+}
+
+.past-question3 i {
+    text-decoration: none;
+    color: white;
+}
+
+.go-back{
+    border: 1px solid var(--text-color);
+    margin-bottom: 100px;
+}
+
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
