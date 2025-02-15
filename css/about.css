@@ -50,3 +50,8 @@ p {
         font-size: 16px;
     }
 }
+
+.sub-note{
+    scale: .8;
+    opacity: .8;
+}

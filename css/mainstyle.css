@@ -303,6 +303,7 @@
       bottom: 0;
       left: 0;
       width: 100%;
+      z-index: 1000;
     }
     nav a {
       color: var(--text-color);
@@ -610,7 +611,6 @@
     .contact-us{
         text-align: left;
         margin-bottom: 5px;
-        /* margin-top: 30px; */
     }
 
     .social-container {
@@ -831,6 +831,13 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            width: 70%;
+          }
+
+          @media (max-width: 500px) {
+            .menu-main-div{
+                width: 90%;
+            }
           }
 
           .menu-container {
@@ -842,6 +849,7 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             margin-top: -70px;
         }
+
         .menu-container details {
             margin-bottom: 10px;
             background: var(--text-color);
