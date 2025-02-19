@@ -2,7 +2,7 @@
 .about-container {
     margin: 50px auto;
     padding: 20px;
-    background: white;
+    background: var(--bg-color);
     border-radius: 10px;
     text-align: center;
     display: flex;
