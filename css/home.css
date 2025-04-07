@@ -124,7 +124,7 @@
   .watch-list{
     position: relative;
     max-width: 500px;
-    width: 80vb;
+    width: 80%;
     height: fit-content;
     display: flex;
     justify-content: center;
