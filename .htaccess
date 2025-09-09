@@ -1,11 +1,11 @@
 # Enable rewrite engine
 RewriteEngine On
 
-# Remove .html from URL
+# Remove .html from URL (serve the .html file without showing it)
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^([^/]+)$ $1.html [L]
 
-# Redirect requests with .html to clean version
+# Redirect requests WITH .html to the clean version
 RewriteCond %{THE_REQUEST} \s/([^.]+)\.html[\s?]
-RewriteRule ^ %1 [R=301,L]
+RewriteRule ^([^.]+)\.html$ /$1 [R=301,L]
